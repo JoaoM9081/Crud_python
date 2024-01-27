@@ -1,3 +1,5 @@
+from lib.funcionalidades import ler_int
+
 def linha(tam = 42):
     return '-' * tam
 
@@ -5,16 +7,6 @@ def cabeçalho(txt):
     print(linha())
     print(txt.center(42))
     print(linha())
-
-def ler_int(msg):
-    while True:
-        try:
-            n = int(input(msg))
-        except(ValueError, TypeError):
-            print('\033[31mEntrada inválida, tente inserir um número inteiro válido\033[m')
-            continue
-        else:
-            return n
 
 def menu(l):
     cabeçalho('Menu principal')

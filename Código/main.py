@@ -15,7 +15,7 @@ while True:
     elif resposta == 2: # cadastrar novas pessoas
         cabeçalho('NOVO CADASTRO')
         nome = str(input('Nome: '))
-        idade = int(input('Idade: '))
+        idade = ler_int('Idade: ')
         cadastrar(arq, nome, idade)
     elif resposta == 3: # Editar dados de usuários cadastrados
         cabeçalho('EDITAR DADOS')

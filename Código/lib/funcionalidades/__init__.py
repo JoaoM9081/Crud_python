@@ -1,3 +1,13 @@
+def ler_int(msg):
+    while True:
+        try:
+            n = int(input(msg))
+        except(ValueError, TypeError):
+            print('\033[31mEntrada inválida, tente inserir um número inteiro válido\033[m')
+            continue
+        else:
+            return n
+
 def ler_arquivo(nome):
     try:
         a = open(nome, 'rt')
@@ -15,7 +25,6 @@ def ler_arquivo(nome):
             print('\033[1mO registro ainda está vazio.\033[m')
     finally:
         a.close()
-
 
 def cadastrar(arq, nome = 'desconhecido', idade = 0):
     try:
