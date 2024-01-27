@@ -1,6 +1,6 @@
-# Projeto de cadastro de pessoas em Python
+# Projeto de cadastro de usuários em Python
 
-Este é um projeto que implementa um sistema **CRUD** (Create, Read, Update, Delete) para o **cadastro de pessoas** em Python.
+Este é um projeto que implementa um sistema **CRUD** (Create, Read, Update, Delete) para o **cadastro de usuários** em Python.
 
 ### Funcionalidades
 
