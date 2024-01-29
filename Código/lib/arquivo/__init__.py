@@ -12,6 +12,6 @@ def criar_arquivo(nome):
         a = open(nome, 'wt+')
         a.close()
     except:
-        print('\033[31mErro ao abrir aquivo\033[m!')
+        print('\033[31mErro ao abrir arquivo\033[m!')
     else:
         print(f'\033[32mArquivo "{nome}" criado com sucesso!\033[m')
